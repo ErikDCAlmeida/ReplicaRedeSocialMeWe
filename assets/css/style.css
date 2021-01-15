@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700;900&display=swap');
+
+*{
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+}
+
+.principalSuperior{
+    height: 760px;
+    background-image: url("../images/main-background-5-2.c6574359.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 120px;
+}
+
+.containerHeaderPrincipal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerHeaderPrincipal img{
+    width: 150px;
+}
+
+.containerHeaderPrincipal .menu{
+    display: flex;
+    align-items: center;
+}
+
+.containerHeaderPrincipal .menu ul,
+.containerHeaderPrincipal .menu li{
+    list-style: none;
+}
+
+.containerHeaderPrincipal .menu ul{
+    display: flex;
+}
+
+.containerHeaderPrincipal .menu li{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.containerHeaderPrincipal .menu li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.containerHeaderPrincipal .menu li:last-child a{
+    display: flex;
+    align-items: center;
+}
+
+.containerHeaderPrincipal .menu .seta{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 20px;
+    border: 8px solid;
+    border-color: #FFF transparent transparent transparent;
+}
+
+.containerHeaderPrincipal .menu button{
+    border: 0 none;
+    outline: none;
+    padding: 15px 18px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #F77D00;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.sectionPrincipal{
+    display: flex;
+    justify-content: center;
+    height: 640px;
+}
+
+.containerSectionPrincipal{
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.containerSectionPrincipal .cadastro{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.containerSectionPrincipal .txtCadastro{
+    text-align: center;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+    cursor: context-menu;
+}
+
+.containerSectionPrincipal form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSectionPrincipal .inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.containerSectionPrincipal .inputs #password{
+    grid-column: 1 / 3;
+}
+
+.containerSectionPrincipal .inputs input{
+    outline: none;
+    border: unset;
+    padding: 8px 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+}
+
+.containerSectionPrincipal .inputs input:focus{
+    border: 2px solid #F77D00;
+}
+
+.containerSectionPrincipal fieldset{
+    border: unset;
+    padding: 0;
+    width: 100%;
+}
+
+.containerSectionPrincipal fieldset .termosCadastro{
+    width: 100%;
+}
+
+.containerSectionPrincipal fieldset .termo{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.containerSectionPrincipal fieldset .termo:hover input{
+    box-shadow: 0px 0px 10px 1px #a8a7a7;
+}
+
+.containerSectionPrincipal fieldset label{
+    font-size: 14px;
+    color: #FFF;
+}
+
+.containerSectionPrincipal fieldset label a{
+    color: #FFF;
+}
+
+.containerSectionPrincipal form .botao{
+    display: flex;
+    justify-content: center;
+}
+
+.containerSectionPrincipal form button{
+    outline: none;
+    border: 0 none;
+    border-radius: 15px;
+    background-color: #F77D00;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    justify-self: center;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    box-shadow: 0px 2px 1px #CC6700;
+    cursor: pointer;
+}
+
+.containerSectionPrincipal .infos{
+    width: 680px;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+
+.containerSectionPrincipal .infos .txtInfo{
+    text-align: center;
+    font-size: 37px;
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 25px;
+    width: 400px;
+    text-shadow: 0px 0px 35px #000;
+    cursor: context-menu;
+}
+
+.containerSectionPrincipal .infos .descInfo{
+    font-size: 27px;
+    font-weight: 400;
+    color: #FFF;
+    margin-bottom: 35px;
+    width: 400px;
+    cursor: context-menu;
+}
+
+.containerSectionPrincipal .infos .videoInfo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 350px;
+}
+
+.containerSectionPrincipal .infos .videoInfo .circuloPlayer{
+    background-color: #FFF;
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.containerSectionPrincipal .infos .videoInfo .circuloPlayer::before{
+    content: "";
+    border: 16px solid;
+    border-color: transparent transparent transparent #F77D00;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 23px;
+}
+
+.containerSectionPrincipal .infos .videoInfo .txtVideo{
+    font-size: 27px;
+    color: #FFF;
+}
+
+.sectionMarcas{
+    background-color: #303D4C;
+    display: flex;
+    justify-content: center;
+    height: 125px;
+}
+
+.containerSectionMarcas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerSectionMarcas .marca{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.containerSectionMarcas img{
+    width: 85px;
+    margin-right: 15px;
+}
+
+.containerSectionMarcas .marca #sxsw{
+    width: 70px;
+}
+
+.containerSectionMarcas .marca .txtMarca{
+    font-size: 18px;
+    color: #FFF;
+}
+
+.sectionVideo{
+    background-image: url("../images/video-background.3abc1b88.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionVideo .imgVideo{
+    background-image: url("../images/videoImg.png");
+    background-position: center;
+    background-size: cover;
+    width: 1150px;
+    height: 550px;
+}
+
+.sectionInfoPhones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionInfoPhones .infos{
+    background-color: #FFF;
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionInfoPhones .imgCelulares{
+    background-image: url("../images/meweCellphone.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 625px;
+    width: 100%;
+}
+
+.sectionInfoPhones .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 265px;
+}
+
+.sectionInfoPhones .info .titInfo{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 25px 0px;
+    font-family: 'Open Sans', 'Lato', Helvetica, sans-serif;
+}
+
+.sectionInfoPhones .info #trust{
+    color: #2C488A;
+}
+
+.sectionInfoPhones .info #control{
+    color: #EB2B8E;
+}
+
+.sectionInfoPhones .info #safaty{
+    color: #FF8100;
+}
+
+.sectionInfoPhones .info #connections{
+    color: #007DA1;
+}
+
+.sectionInfoPhones .info .descInfo{
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 25px;
+    height: 150px;
+    cursor: context-menu;
+}
+
+.containerPhones{
+    width: 100%;
+}
+
+.sectionInfoPhones{
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#12266b 50%,#12266b 100%);
+}
+
+.sectionInfoPhones .phoneDownloads{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 430px;
+}
+
+.sectionInfoPhones .containerInfosPhonesDownload{
+    max-width: 1000px;
+    text-align: center;
+}
+
+.sectionInfoPhones .phoneDownloads .tituloPhone{
+    font-family: 'Open Sans', 'Lato', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 50px;
+    width: 1000px;
+    text-align: center;
+    cursor: context-menu;
+}
+
+.sectionInfoPhones .phoneDownloads .descPhone{
+    font-family: 'Open Sans', 'Lato', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 33px;
+    width: 1180px;
+    text-align: center;
+    margin: 35px 0px;
+    cursor: context-menu;
+    line-height: 40px;
+}
+
+.sectionInfoPhones .phoneDownloads .botoes{
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionFraseConforto{
+    background-image: url("../images/main-background-3.592ec4e6.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 620px;
+}
+
+.sectionFraseConforto .containerFC{
+    width: 95%;
+    max-width: 1100px;
+}
+
+.sectionFraseConforto .bgColorFC{
+    background-color: rgba(3, 151, 196, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sectionFraseConforto .txtFraseConforto{
+    font-family: 'Open Sans', 'Lato', Helvetica, sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+footer{
+    background-color: #303D4C;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+.containerFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menuFooter ul,
+.menuFooter li{
+    list-style: none;
+}
+
+.menuFooter ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuFooter li{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.menuFooter li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.menuFooter li a:last-child{
+    display: flex;
+}
+
+.menuFooter .setaFooter{
+    margin-top: 8px;
+    margin-left: 5px;
+    border: 7px solid;
+    border-color: #FFF transparent transparent transparent;
+}
+
+.containerFooter .imgTwt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.containerFooter .copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 50px;
+    color: #5B676B;
+}
+
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 1240px){
+    .containerHeaderPrincipal{
+        flex-direction: column;
+    }
+
+    .containerSectionPrincipal{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .principalSuperior{
+        height: 1000px;
+    }
+
+    header{
+        height: 200px;
+        align-items: center;
+    }
+
+    .sectionPrincipal{
+        height: 800px;
+    }
+
+    .containerSectionPrincipal .cadastro{
+        width: 100%;
+        height: 400px;
+    }
+
+    .sectionInfoPhones .phoneDownloads .tituloPhone{
+        max-width: 1000px;
+        width: auto;
+    }
+    
+    .sectionInfoPhones .phoneDownloads .descPhone{
+        width: 100%;
+    }
+
+    .containerSectionPrincipal .infos{
+        width: 100%;
+        height: 400px;
+        padding-bottom: 0;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+
+    .containerSectionPrincipal .infos .txtInfo br{
+        display: none;
+    }
+
+    .containerSectionPrincipal .infos .txtInfo{
+        width: 100%;
+    }
+
+    .containerSectionPrincipal .infos .videoInfo .circuloPlayer::before{
+        margin-left: -4px;
+    }
+
+    .containerSectionPrincipal .infos .videoInfo a{
+        width: auto;
+    }
+}
+
+@media (max-width: 1180px){    
+    .sectionInfoPhones .infos{
+        flex-wrap: wrap;
+    }
+
+    .sectionInfoPhones .info{
+        width: 45%;
+    }
+
+    .sectionVideo a{
+        width: 98%;
+    }
+
+    .sectionVideo .imgVideo{
+        width: 100%;
+    }
+
+    .sectionInfoPhones{
+        background: linear-gradient(to bottom, #ffffff 0%,#ffffff 60%,#12266b 60%,#12266b 100%);
+    }
+}
+
+@media (max-width: 970px){
+    .containerHeaderPrincipal .menu{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerHeaderPrincipal .menu ul{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .principalSuperior{
+        height: auto;
+    }
+
+    header{
+        height: auto;
+        align-items: center;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .sectionPrincipal{
+        height: auto;
+    }
+
+    .containerSectionPrincipal .cadastro{
+        height: 600px;
+    }
+
+    .containerSectionPrincipal .infos{
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 945px){
+    .sectionInfoPhones .info .descInfo{
+        width: 300px;
+    }
+
+    .menuFooter ul{
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menuFooter li{
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 770px){
+    header{
+        margin-bottom: 30px;
+    }
+
+    .containerSectionPrincipal .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionPrincipal{
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .containerSectionPrincipal .cadastro{
+        height: auto;
+    }
+
+    .containerSectionPrincipal .infos{
+        height: auto;
+    }
+
+    .sectionMarcas{
+        height: auto;
+    }
+
+    .containerSectionMarcas{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .containerSectionMarcas .marca{
+        width: 100px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 15px 0px;
+    }
+
+    .containerSectionMarcas .marca .txtMarca{
+        height: 100px;
+    }
+
+    .sectionInfoPhones .phoneDownloads{
+        height: auto;
+        padding: 60px;
+    }
+
+    .sectionInfoPhones .phoneDownloads .botoes{
+        flex-direction: column;
+        height: 200px;
+        width: auto;
+    }
+
+    .sectionInfoPhones{
+        background: linear-gradient(to bottom, #ffffff 0%,#ffffff 52.7%,#12266b 52.7%,#12266b 100%);
+    }
+}
+
+@media (max-width: 690px){
+    .sectionInfoPhones .info{
+        width: 100%;
+    }
+
+    .sectionInfoPhones{
+        background: linear-gradient(to bottom, #ffffff 0%,#ffffff 65.4%,#12266b 65.4%,#12266b 100%);
+    }
+}
+
+@media (max-width: 637px){
+    .sectionInfoPhones{
+        background: linear-gradient(to bottom, #ffffff 0%,#ffffff 64.5%,#12266b 64.5%,#12266b 100%);
+    }
+}
+
+@media (max-width: 550px){
+    .sectionInfoPhones{
+        background: linear-gradient(to bottom, #ffffff 0%,#ffffff 63.2%,#12266b 63.2%,#12266b 100%);
+    }
+}
+
+@media (max-width: 540px){
+    .sectionInfoPhones{
+        background: linear-gradient(to bottom, #ffffff 0%,#ffffff 61.8%,#12266b 61.8%,#12266b 100%);
+    }
+}
+
+@media (max-width: 500px){
+    .containerSectionMarcas .marca{
+        justify-content: left;
+        width: 95%;
+        height: 150px;
+        text-align: center;
+    }
+
+    .containerSectionPrincipal .infos .descInfo{
+        width: auto;
+    }
+
+    .containerSectionMarcas{
+        flex-direction: column;
+    }
+
+    .sectionInfoPhones .phoneDownloads{
+        padding-top: 0px;
+    }
+
+    .sectionInfoPhones .phoneDownloads .tituloPhone{
+        font-size: 48px;
+    }
+}
+
+@media (max-width:375px){
+    .sectionInfoPhones{
+        background: linear-gradient(to bottom, #ffffff 0%,#ffffff 59.4%,#12266b 59.4%,#12266b 100%);
+    }
+
+    .sectionInfoPhones .imgCelulares{
+        height: 500px;
+        width: 300px;
+    }
+
+    .menuFooter ul{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .sectionInfoPhones .phoneDownloads .tituloPhone{
+        font-size: 46px;
+    }
+}
